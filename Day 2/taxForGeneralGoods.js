@@ -1,9 +1,8 @@
-
-let toAddNumbers = require("./toAddNumber.js");
+let toAdd = require("./toAddNumber.js");
 
 exports.taxForGeneralGood =  function(itemPrice){
-	var taxes = 0;
-	taxes = toAddNumbers.toAdd(0, (10*itemPrice)/100);
-	taxes = Number((Math.ceil((taxes)*20)/20).toFixed(3));
+	let taxes = 0;
+	taxes = toAdd.toAddNumbers(0, (10*itemPrice)/100);
+	taxes = Number((Math.ceil((taxes)*20)/20).toFixed(2));
 	return taxes;
 }
