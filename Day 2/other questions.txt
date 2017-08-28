@@ -1,0 +1,13 @@
+Quiz
+Difference between HTTP GET/POST/PUT/DELETE?
+What are cookies?
+What is the difference between session and a cookie?
+Why do we need sessions?
+What is HTML5?
+Can Javascript be executed on the server end?
+Why do we need AJAX?
+Difference between HTTP and HTTPS?
+Can one site make request to multiple servers?
+How does the site know which server to hit? When I press google.com on my browser and click enter.. explain exactly with steps what happens?
+
+RESTful apis

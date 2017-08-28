@@ -5,12 +5,12 @@ let generalTax= require("./taxForGeneralGoods.js");
 let importedTax= require("./taxForImportedGoods.js");
 let output= require("./outputForSalesTax.js");
 let toAdd= require("./toAddNumber.js");
-let input= require("./inputForSalesTax.js");
+let getShoppingList= require("./inputForSalesTax.js"); //get data
 
-let bag = input.inputList();
+let shoppingBag = getShoppingList.inputList();
 let totalTaxes = 0;
 
-bag.forEach(function(item){
+shoppingBag.forEach(function(item){
 	let salesTaxes = 0;
 	for(let i=0; i<item.quantity; i++){
 		if(item.imported)
@@ -24,4 +24,4 @@ bag.forEach(function(item){
 	}
 })
 
-output.outputForSalesTax(bag, totalTaxes);
+output.outputForSalesTax(shoppingBag, totalTaxes);

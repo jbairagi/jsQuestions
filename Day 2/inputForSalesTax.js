@@ -14,7 +14,7 @@ exports.inputList = function() {
 			imported: Boolean(response[3]), 
 			taxable:Boolean(response[4]) 
 		};
-
+		//check values
 		if(item.name == 'q')
 			break;
 		items.push(item);
